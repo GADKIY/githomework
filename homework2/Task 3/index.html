@@ -10,32 +10,61 @@
             confirm("Ага, попавсь!");
         }
     </script>
+        <script>
+        function popavsya2(){
+            confirm("Ты правда думал, что инфа конфиденциальна?!?!XD");
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <fieldset title="Информация для спецслужб">
-        <legend>Заполни форму для ЦРУ</legend>
-        <form action="#" method="POST" enctype="multipart/form-data" onsubmit="popavsya()">
-            <label for="first_name"><b>Имя</b></label><br>
-            <input type="text" id="first_name"><br>
-            <label for="last_name"><b>Фамилия<span class="star">*</span></b></label><br>
-            <input type="text" id="last_name"><br>
-            <label for="Email"><b>Email</b></label><br>
-            <input type="email" placeholder="Email" id="Email" required><br>
-            <label for="password"><b>Секретный пароль</b></label><br>
-            <input type="password" placeholder="Password" id="password"><br>
-            <label for="dis_form"><b>Введи пожелания</b></label><br>
-            <input placeholder="Ничего у тебя не получится" id="dis_form" disabled><br>
-            <label for="date_birth"><b>Дата рождения</b></label><br>
-            <input type="date" id="date_birth"><br>
-            <label for="time_now"><b>Какое у тебя сейчас время?</b></label><br>
-            <input type="time" id="time_now"><br>
-            <button type="submit">Жми не бойся!</button>
-            <button type="reset">Нажать аккуратно</button>
-            <button disabled>Не нажимать</button>            
-        </form>
-    </fieldset>
+        <fieldset title="Информация для спецслужб">
+            <legend>Заполни форму для ЦРУ</legend>
+            <form action="#" method="POST" enctype="multipart/form-data" onsubmit="popavsya()">
+                <label for="first_name"><b>Имя</b></label><br>
+                <input type="text" id="first_name"><br>
+                <label for="last_name"><b>Фамилия<span class="star">*</span></b></label><br>
+                <input type="text" id="last_name"><br>
+                <label for="Email"><b>Email</b></label><br>
+                <input type="email" placeholder="Email" id="Email" required><br>
+                <label for="password"><b>Секретный пароль</b></label><br>
+                <input type="password" placeholder="Password" id="password"><br>
+                <label for="dis_form"><b>Введи пожелания</b></label><br>
+                <input placeholder="Ничего у тебя не получится" id="dis_form" disabled><br>
+                <label for="date_birth"><b>Дата рождения</b></label><br>
+                <input type="date" id="date_birth"><br>
+                <label for="time_now"><b>Какое у тебя сейчас время?</b></label><br>
+                <input type="time" id="time_now"><br>
+                <button type="submit">Жми не бойся!</button>
+                <button type="reset">Нажать аккуратно</button>
+                <button disabled>Не нажимать</button>            
+            </form>
+        </fieldset>
     </div>
+    <div class="container2">
+        <fieldset title="Программа защиты свидетелей">
+            <legend>Информация конфиденциальна</legend>
+            <form action="#" method="POST" enctype="multipart/form-data" onsubmit="popavsya2()">
+                <label for="true_first_name"><b>Настоящее имя</b></label><br>
+                <input type="text" id="true_first_name"><br>
+                <label for="true_last_name"><b>Настоящая фамилия<span class="star">*</span></b></label><br>
+                <input type="text" id="true_last_name"><br>
+                <label for="true_email"><b>Email</b></label><br>
+                <input type="email" placeholder="Email" id="true_email" required><br>
+                <label for="password2"><b>Секретный пароль</b></label><br>
+                <input type="password" placeholder="Password" id="password2"><br>
+                <label for="dis_form2"><b>Введи пожелания</b></label><br>
+                <input placeholder="Ничего у тебя не получится" id="dis_form2" disabled><br>
+                <label for="date_birth2"><b>Дата рождения</b></label><br>
+                <input type="date" id="date_birth2"><br>
+                <label for="time_now2"><b>Какое у тебя сейчас время?</b></label><br>
+                <input type="time" id="time_now2"><br>
+                <button type="submit">Жми не бойся!</button>
+                <button type="reset">Нажать аккуратно</button>
+                <button disabled>Не нажимать</button>            
+            </form>
+        </fieldset>
+    </div>   
 </body>
 </html>
