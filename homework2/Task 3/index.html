@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script>
+        function popavsya(){
+            confirm("Ага, попавсь!");
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <fieldset title="Информация для спецслужб">
+        <legend>Заполни форму для ЦРУ</legend>
+        <form action="#" method="POST" enctype="multipart/form-data" onsubmit="popavsya()">
+            <label for="first_name"><b>Имя</b></label><br>
+            <input type="text" id="first_name"><br>
+            <label for="last_name"><b>Фамилия<span class="star">*</span></b></label><br>
+            <input type="text" id="last_name"><br>
+            <label for="Email"><b>Email</b></label><br>
+            <input type="email" placeholder="Email" id="Email" required><br>
+            <label for="password"><b>Секретный пароль</b></label><br>
+            <input type="password" placeholder="Password" id="password"><br>
+            <label for="dis_form"><b>Введи пожелания</b></label><br>
+            <input placeholder="Ничего у тебя не получится" id="dis_form" disabled><br>
+            <label for="date_birth"><b>Дата рождения</b></label><br>
+            <input type="date" id="date_birth"><br>
+            <label for="time_now"><b>Какое у тебя сейчас время?</b></label><br>
+            <input type="time" id="time_now"><br>
+            <button type="submit">Жми не бойся!</button>
+            <button type="reset">Нажать аккуратно</button>
+            <button disabled>Не нажимать</button>            
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
