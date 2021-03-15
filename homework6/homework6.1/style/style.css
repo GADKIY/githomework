@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+
+.container ul li{
+    display: inline-block;
+    width: 33.3333%;
+    margin: 0 -2px;
+    /* padding:0 160px; */
+    text-align: center;
+    font-family: 'ProximaNova', sans-serif;
+
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 400;   
+    font-size: 15px;
+    padding-top: 11px;
+    padding-bottom: 14px;
+}
+
+p{
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.icon{
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9; 
+    background-image: url('../img/sprite.png');
+    background-repeat: no-repeat;
+    
+}
+.icon:hover{
+    background-color: #fff;
+}
+
+.icon_tablet{
+    background-position: 19px 15px;
+    transition: all .15s ease-in;
+}
+
+.icon_tablet:hover{
+    background-position: 19px -65px;
+    transition: all .15s ease-in;
+}
+
+.icon_settings{
+    background-position: -72px 16px;
+    transition: all .15s ease-in;
+}
+
+.icon_settings:hover{
+    background-position: -72px -63px;
+    transition: all .15s ease-in;
+}
+
+.icon_dashboard{
+    background-position: -171px 17px;
+    transition: all .15s ease-in;
+}
+
+.icon_dashboard:hover{
+    background-position: -171px -63px;
+    transition: all .15s ease-in;
+}
