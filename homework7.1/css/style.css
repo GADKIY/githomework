@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #fff; */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 945px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+h2{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight:600;
+    color: #0ec8cb;
+    margin-bottom: 20px;
+    letter-spacing: 7px;
+    word-spacing: 5px;  
+}
+
+/* h3{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+} */
+
+.tablefix{
+    width: 100%;
+    display: table;
+    margin-bottom: 10px;
+}
+
+.table{
+    text-transform: uppercase;
+    color: #1b1b1b;
+    margin-bottom: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+
+ul .card{
+    list-style: none;
+
+} 
+
+.container .cards_1 .cards{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin: 0 -3px;
+    height: 420px;
+    border: 1px solid #ececec;
+    list-style: none;
+}
+
+.card_text{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+.slogan{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #898f99;
+    letter-spacing: 4.5px;
+    
+}
+
+.head_slogan{
+    text-transform: uppercase;
+    color: #898f99;
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.icon{
+    display: inline-block;
+    width: 66px;
+    height: 66px;
+    background-color: #f7f7f7;
+    background-image: url('../img/icons.png');
+    background-repeat: no-repeat;
+    margin-top: 54px;
+    margin-bottom: 50px;
+    cursor: inherit;
+}
+
+/* .icon:hover{
+    background-color: #0ec8cb;
+} */
+
+.cards{
+    background-color: #f7f7f7;
+}
+
+.cards:hover{
+    background-color: #0ec8cb;
+    border: 0px;
+}
+
+.icon_anchor{
+    background-position: 0px 0px;
+}
+
+.cards:hover .icon{
+    background-color: #0ec8cb;
+}
+
+.cards:hover .icon_anchor{
+    background-position: 0 -130px;
+}
+
+.cards:hover .table{
+    color: #fff;
+}
+
+.cards:hover .card_text{
+    color: #fff;
+}
+
+.icon_diamond{
+    background-position: -143px 0;
+}
+
+.cards:hover .icon_diamond{
+    background-position: -143px -130px;
+}
+
+.icon_eyeglasses{
+    background-position: -288px 0;
+}
+
+.cards:hover .icon_eyeglasses{
+    background-position: -288px -130px;
+}
+
+.icon_monitor{
+    background-position: -444px 0;
+}
+
+.cards:hover .icon_monitor{
+    background-position: -444px -130px;
+}
+
+
+
+
