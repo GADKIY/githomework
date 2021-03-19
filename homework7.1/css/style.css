@@ -52,12 +52,6 @@ h2{
     height: 50px;
     font-weight: 600;
     font-size: 21px;
-}
-
-
-ul .card{
-    list-style: none;
-
 } 
 
 .container .cards_1 .cards{
@@ -65,9 +59,10 @@ ul .card{
     width: 25%;
     text-align: center;
     margin: 0 -3px;
-    height: 420px;
+    /* height: 420px; */
     border: 1px solid #ececec;
     list-style: none;
+    padding: 30px;
 }
 
 .card_text{
@@ -75,8 +70,9 @@ ul .card{
     font-weight: 400;
     font-size: 14px;
     color: #777777;
-    padding: 0 30px 0 30px;
+    /* padding: 0 30px 0 30px; */
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .slogan{
@@ -124,7 +120,7 @@ ul .card{
 
 .cards:hover{
     background-color: #0ec8cb;
-    border: 0px;
+    border-color: #0ec8cb;
 }
 
 .icon_anchor{

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 10px solid #2b81ac;
+    background-color: #3399cc;
+    /* height: auto; */
+    color: #fff;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+div{
+    margin: 24px 213px;
+    font-size: 28px;
+}
+
+ul{
+    list-style: none;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    transition: all .1s ease-in;
+}
+
+
+li{
+    display: inline-block;
+    /* margin: 0 -2px; */  /* на удивление эта штука 
+                            не сработала, пришлось убирать отступы между li в разметке 
+                            и рамка у меня к низу не прибилась, не пойму почему*/
+    border: 2px solid #fff;
+    width: 25%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    transition: all .1s ease-in; 
+}
+
+span{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.wi{
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+.wish{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.container{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+
+.lisbon{
+    width: 50%;
+    background-color: #3399cc;
+}
+
+.paris{
+    background-color: #3cc;
+    
+}
+
+.belgrade{
+    background-color: #969;
+    
+}
+
+.moscow{
+    background-color: #c24747;
+}
+
+.tel_aviv{
+    background-color: #e2674a;
+}
+
+.cair{
+    background-color: #ffcc66;
+}
+
+.new_york{
+    background-color: #9c9;
+}
+
+.new_delhi{
+    background-color: #699;
+
+}
+
+.san_francisco{
+    width: 50%;
+    background-color: #c69;
+}
+
+.tokyo{
+    background-color: #396;
+
+}
+
+.sydney{
+    width: 100%;
+    background-color: #669;
+}
+
+ul:hover li:not(:hover){
+    opacity: 0.6;
+}
