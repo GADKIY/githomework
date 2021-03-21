@@ -1,0 +1,128 @@
+/* непонятно несколько моментнов: первое это позиционирование 
+картинки с мужиком, второе: я не смог найти шрифт с правильным начертанием
+и ещё в мой монитор не влазит контейнер с такими размерами, поэтому пришлось
+версать его с масштабом в 50% в браузере, с масштабом всё получилось, иначе у меня карточки налазять друг на друга по вертикали
+и весь контейнер уходит за границы видимой области */
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #e2e7ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1120px;
+    height: 100%;
+    max-height: 1100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.container .bigger{
+    display: flex;
+    width: 740px;
+    height: 540px;
+    background-image: url(../img/car.png);
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+
+.card{
+    display: flex;
+    height: 540px;
+    width: 360px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0 10px 0;
+}
+
+.bigger>.title{
+    font-family: 'hans_kendrickregular';
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0 120px 0 43px;
+    margin-bottom: 30px;
+    margin-left: unset;
+}
+
+.title{
+    font-family: 'hans_kendrickregular';   
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 28px;
+    padding: 0 20px 0 0;
+}
+
+.img{
+    width: 360px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.girl>.img{
+    background-image: url(../img/girl.png);
+}
+
+.girls>.img{
+    background-image: url(../img/girls.png);
+}
+
+.boots>.img{
+    background-image: url(../img/boots.png);
+}
+
+.white_car>.img{
+    background-image: url(../img/whitecar.png);
+}
+
+.date{
+    font-family: 'hans_kendrickregular';
+    color: #9a968f;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 28px;
+    margin-bottom: 17px;
+}
+
+.bigger>.date{
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+
+/* .card>.autor_photo{
+    display: flex;
+    width: 54px;
+    height: 54px;
+    background-image: url(../img/autor.png);
+    background-repeat: no-repeat;
+    position: absolute;
+} */
+
+
+    
