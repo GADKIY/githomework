@@ -1,0 +1,118 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+    background-color: #464f54;
+}
+
+.panel{
+    display: flex;
+    width: 90%;
+    max-width: 876px;
+    height: 90%;
+    max-height: 262px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.area{
+    background-color: #181818;
+    width: 100%;
+    max-width: 877px;
+    height: 100%;
+    max-height: 186px;
+}
+
+/* input[type="text"]{
+    outline bottom: 2px solid #303030; 
+    height: 70px;
+    width: 100%;
+
+} */
+
+.icons li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .3;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.list{
+    height: 100%;
+    max-height: 76px;
+    background-color: #fbc02d;
+    width: 100%;
+    max-width: 812px;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-top: 15px; 
+    margin-left: 64px;
+}
+
+p{
+    font-family: 'georgiaregular';
+    font-size: 27px;
+    margin-bottom: 40px;
+}
+
+.author{
+    font-family: 'proxima_novaregular';
+    font-size: 20px;
+    color: #b4b4b4;
+    text-transform: uppercase;
+}
+
+.content{
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto;
+    /* height: 100%; */
+    background-color: #fff;
+    margin-top: 150px;
+    padding-top: 200px;
+    padding-right: 127px;
+    padding-left: 115px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.6);
+    
+}
+
+h2{
+    font-family: 'Futura PT Heavy';
+    font-size: 78px;
+    text-transform: uppercase;
+}
+
+.title{
+    font-family: 'georgiaregular';
+    font-style: italic;
+    font-size: 30px;
+    color: #8f8f8f;
+    margin-bottom: 55px;
+}

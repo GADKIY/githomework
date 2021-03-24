@@ -122,7 +122,11 @@ body{
     background-image: url(../img/autor.png);
     background-repeat: no-repeat;
     position: absolute;
+    
 } */
 
-
+.autor_photo{
+    position: absolute;
+    bottom: 50%;
+}
     
