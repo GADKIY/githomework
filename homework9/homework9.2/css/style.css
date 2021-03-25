@@ -8,8 +8,27 @@
 
 html, body{
     width: 100%;
-    height: 100%;
-    
+    height: 100%;  
+}
+
+#title{
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #303030;
+    outline: none;
+
+}
+
+.area label {
+    display: block;
+    color: #767676;
+    font-family: 'proxima_novaregular';
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 body{
@@ -35,18 +54,14 @@ body{
     max-width: 877px;
     height: 100%;
     max-height: 186px;
+    padding-top: 60px;
+    padding-left: 60px;
 }
-
-/* input[type="text"]{
-    outline bottom: 2px solid #303030; 
-    height: 70px;
-    width: 100%;
-
-} */
 
 .icons li{
     list-style: none;
     display: inline-block;
+    margin: 15px 0; 
     
 }
 
@@ -63,15 +78,15 @@ a:hover{
 }
 
 .list{
-    height: 100%;
-    max-height: 76px;
+    /* height: 100%; */
+    /* max-height: 76px; */
     background-color: #fbc02d;
     width: 100%;
     max-width: 812px;
     text-align: left;
     font-size: 40px;
     padding-left: 40px;
-    padding-top: 15px; 
+    /* padding-top: 15px;  */
     margin-left: 64px;
 }
 
@@ -89,6 +104,7 @@ p{
 }
 
 .content{
+    position: relative;
     width: 90%;
     max-width: 1060px;
     margin: 0 auto;
@@ -100,7 +116,18 @@ p{
     padding-left: 115px;
     padding-bottom: 40px;
     box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.6);
-    
+    z-index: -1;
+}
+
+.content::before{
+    content: '';
+    background-color: #e8eced;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 67px;
+
 }
 
 h2{
