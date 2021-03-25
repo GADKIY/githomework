@@ -10,8 +10,8 @@ html, body{
 }
 
 .conteiner {
-    height: 90%;
-    max-height: 940px;
+    /* height: 90%;
+    max-height: 940px; */
     width: 90%;
     max-width: 1400px;
     padding: 125px;
