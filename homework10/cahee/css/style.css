@@ -7,17 +7,16 @@
 html, body{
     width: 100%;
     height: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 h2{
-    font-family: 'Raleway', sans-serif;
     font-size: 90px;
     color: #fff;
     margin-bottom: 25px;
 }
 
 p{
-    font-family: 'Raleway', sans-serif;
     font-size: 17px;
     color: #fff;
     padding: 0 315px;
@@ -65,7 +64,6 @@ section{
 }
 
 .by{
-    font-family: 'Raleway', sans-serif;
     font-size: 13px;
     color: #fff;
     text-align: left;
@@ -76,7 +74,6 @@ section{
     width: 60px;
     height: 60px;
     background-color: rgba(0, 0, 0, .5);
-    font-family: 'Raleway', sans-serif;
     font-size: 21px;
     font-weight: 900;
     color: #fff;
@@ -100,7 +97,6 @@ section{
 }
 
 .topic{
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #fff;
     font-size: 20px;
@@ -131,7 +127,6 @@ section{
     display: inline-block;
     width: 200px;
     height: 55px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: #fff;
     font-size: 20px;
