@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="autorize-card">
+            <div class="autorize-card__header header">
+                <ul class="autorize_method">
+                    <li class="method method--active">Sign in</li>
+                    <li class="method">Join us</li>
+                </ul>
+            </div>
+            <div class="autorize-card__box">
+                <form action="#" class="autorize-card__form form" method="POST">
+                    <div class="form__fields">
+                        <div class="form__field">
+                            <label for="username" class="form__field-title">Username</label>
+                            <div class="form__control">
+                                <input type="text" id="username" name="username" required class="form__control-input">
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label for="password" class="form__field-title">Password</label>
+                            <div class="form__control">
+                                <input type="password" id="password" name="password" required class="form__control-input">
+                            </div>
+                        </div>
+                        <div class="autorize-memory">
+                            <input class="autorize-memory__checked" type="checkbox" id="keeper" name="keeper" value="">
+                            <label for="keeper" class="keep__autorize">Keep me signed in</label>
+                        </div>
+                    </div>
+                    <div class="form__actions">
+                        <div class="form__actions-buton">
+                            <button class="btn-sign_in" type="submit">Sign in</button>
+                        </div>
+                        <div class="form__actions-buton--transparent">
+                            <button class="btn btn-forgot" type="submit">Forgot password</button>
+                            <button class="btn btn-create" type="submit">Create an account</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
