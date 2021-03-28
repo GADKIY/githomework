@@ -125,22 +125,24 @@ section{
     margin-bottom: 0;
 } */
 
-.view_more{
+.btn{
     display: inline-block;
     width: 200px;
     height: 55px;
     font-weight: 300;
-    color: #fff;
-    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 55px;
-    background-color: #f72b3b;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     transition: all .1s ease-in;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    line-height: 55px;
 }
 
-.view_more:hover{
+.btn__view_more{
+    color: #fff;
+    background-color: #f72b3b;
+}
+
+.btn__view_more:hover{
     transform: scale(1.03);
-    background-color: #ff2132;
 }
