@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Nike</title>
+</head>
+<body>
+    <main>
+        <div class="product">
+            <div class="main__product">
+                <div class="product__gallery gallery">
+                    <div class="product__main-logo">
+                        <img src="assets/img/logo.png" alt="logo" class="gallery__logo">
+                    </div>
+                    <div class="gallery__main-pic">
+                        <img src="assets/img/Nike-SB-Stefan-Janoski-Max.png" alt="shoes" class="gallery__pic">
+                    </div>
+                    <ul class="gallery_color__preview">
+                        <li class="color__item"><a href="#" class="color__select color__select--blue color__select--active"></a></li>
+                        <li class="color__item"><a href="#" class="color__select color__select--white"></a></li>
+                        <li class="color__item"><a href="#" class="color__select color__select--red"></a></li>
+                        <li class="color__item"><a href="#" class="color__select color__select--cyan"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="product__model-name">
+                    Nike SB Stefan Janoski Max
+                </div>
+                <p class="product__model-type">
+                    Unisex Skateboarding Shoe
+                </p>
+                <div class="product__rating rating">
+                    <div class="rating">
+                        <div class="rating__bar">
+                            <label
+                                class="rating__star rating__star--1"
+                                for="rating-star-1"
+                                role="button"
+                                aria-label="Uma estrela"
+                            ></label>
+                            <input
+                                type="checkbox"
+                                id="rating-star-1"
+                                class="rating__checkbox"
+                                name="rating-star-1"
+                                hidden
+                            />
+                            <label
+                                class="rating__star rating__star--2"
+                                for="rating-star-2"
+                                role="button"
+                                aria-label="Uma estrela"
+                            ></label>
+                            <input
+                                type="checkbox"
+                                id="rating-star-2"
+                                class="rating__checkbox"
+                                name="rating-star-2"
+                                hidden
+                            />
+                            <label
+                                class="rating__star rating__star--3"
+                                for="rating-star-3"
+                                role="button"
+                                aria-label="Uma estrela"
+                            ></label>
+                            <input
+                                type="checkbox"
+                                id="rating-star-3"
+                                class="rating__checkbox"
+                                name="rating-star-3"
+                                hidden
+                            />
+                            <label
+                                class="rating__star rating__star--4"
+                                for="rating-star-4"
+                                role="button"
+                                aria-label="Uma estrela"
+                            ></label>
+                            <input
+                                type="checkbox"
+                                id="rating-star-4"
+                                class="rating__checkbox"
+                                name="rating-star-4"
+                                hidden
+                            />
+                            <label
+                                class="rating__star rating__star--5"
+                                for="rating-star-5"
+                                role="button"
+                                aria-label="Uma estrela"
+                            ></label>
+                            <input
+                                type="checkbox"
+                                id="rating-star-5"
+                                class="rating__checkbox"
+                                name="rating-star-5"
+                                hidden
+                            />
+                
+                            <div class="rating__filled-stars"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__select">
+                    <div class="select__product-option">
+                        <select name="size" id="size" class="option__value">
+                            <option value="" disabled selected>Size</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>
+                        <select name="quantity" id="quantity" class="option__value">
+                            <option value="" disabled selected>Qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product__action-button">
+                    <button class="btn-save" type="submit">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/maskedinput.js"></script>
+    <script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
