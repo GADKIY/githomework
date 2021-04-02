@@ -33,16 +33,14 @@ section{
     letter-spacing: 4px;
 }
 
-.fff::before{
+.fff::after{
     content: '';
     width: 45px;
     height: 4px;
     background-color: #dddbdb;
-    left: 650px;
+    left: 50%;
     bottom: -19px;
     position: absolute;
-
-    /* display: inline-block; */
 }
 
 .title{
@@ -67,9 +65,7 @@ section{
 
 .photos{
     display: flex;
-    justify-content: space-between;
-    /* margin-bottom: 50px; */
-    
+    justify-content: space-between;    
 }
 
 .photo{
@@ -102,6 +98,7 @@ section{
     transition: 0.6s;
     transform-style: preserve-3d;
     position: relative;
+    transform: rotateY(0deg);
 }
 
 .front, .back{
@@ -113,7 +110,7 @@ section{
 
 .front{
     z-index: 2;
-    transform: rotateY(0deg);
+    
 }
 
 .back{

@@ -26,9 +26,6 @@ section.section-white{
 }
 
 .header-container{
-    width: 90%;
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,17 +50,28 @@ ul{
 }
 
 .menu_point{
+    display: inline-block;
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     color: #262626;
     text-transform: uppercase;
-    margin: 0 15px;
-    padding: 8px 0 0 0;
+    margin-left: 38px;
+    outline: none;
 }
 
-.menu_point--active{
-    border-top: 3px solid #ff6033;
+.menu_point::before{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #ff6033;
+    transition: all .3s ease-in-out;
+}
+
+.menu_point:hover::before, .menu_point:focus::before{
+    width: 100%;
+    
 }
 
 .container-info{

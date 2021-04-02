@@ -33,19 +33,30 @@ html, body{
     background: url(../img/sf.png), linear-gradient(45deg, rgba(48,35,174,1) 0%, rgba(198,108,214,1) 100%); */
 }
 
-.method{
+.method, a{
     display: inline-block;
     color: #e1c2f1;
     font-size: 18px;
     font-weight: 600;
     list-style: none;
+    text-decoration: none;
+    margin-right: 3px;
 }
 
-.method--active{
-    color: #fff;
-    border-bottom: 2px solid #e66a64;
-    margin-right: 26px;
+a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #e66a64;
+    transition: all .3s ease-in-out;
 }
+
+a:hover::after, a:focus::after{
+    width: 100%;
+}
+
+
 
 .header{
     display: flex;
@@ -94,11 +105,6 @@ html, body{
 
 .autorize-memory{
     position: relative;
-}
-
-.autorize-memory__checked{
-   
-    
 }
 
 .btn-sign_in{
