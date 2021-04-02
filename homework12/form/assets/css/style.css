@@ -54,6 +54,7 @@ a::after{
 
 a:hover::after, a:focus::after{
     width: 100%;
+    /*  */
 }
 
 
