@@ -112,7 +112,6 @@ ul{
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     font-size: 20px;
     line-height: 55px;
-    
 }
 
 .btn__get-free{
@@ -158,12 +157,9 @@ ul{
 }
 
 .container_main{
-    width: 90%;
-    max-width: 1170px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 auto;
 }
 
 .main_block{
