@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /
+
+Sitemap: https://gadkiy.github.io/githomework/homework14/cahee%20full/sitemap.xml
+
+Host: gadkiy.github.io/githomework/homework14/cahee%20full
