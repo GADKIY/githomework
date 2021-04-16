@@ -172,20 +172,35 @@
                     </div>
                     <div class="container container__section--yellow">
                       <div class="picture_wrap">
-                            <div class="image_wrap w68">
-                                <img src="assets/img/peach.png" alt="peach" class="image_inner">
+                            <div class="image_wrap w68">                                
+                                <picture>
+                                    <source media="(max-width:320px)" data-srcset="assets/img/peach@320.png">
+                                    <source media="(max-width:375px)" data-srcset="assets/img/peach@375.png">
+                                    <source media="(max-width:1024px)" data-srcset="assets/img/peach@1024.png">
+                                    <img class="image_inner lazy" data-src="assets/img/peach.png" alt="peach">
+                                </picture>
                             </div>
                             <div class="image_wrap w31">
-                                <div class="w31_1"><img src="assets/img/blueberry.png" alt="blueberry" class="image_inner image_inner--small"></div>
-                                <div class="w31_1"><img src="assets/img/blackberry.png" alt="blackberry" class="image_inner image_inner--small"></div>
+                                <div class="w31_1"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="blueberry" class="image_inner image_inner--small lazy" data-src="assets/img/blueberry.png"></div>
+                                <div class="w31_1"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="blackberry" class="image_inner image_inner--small lazy" data-src="assets/img/blackberry.png"></div>
                             </div>
                       </div>
                       <div class="picture_wrap bottom_wrap">
-                          <div class="image_wrap w50">
-                              <img src="assets/img/cupofmilk.png" alt="cupofmilk" class="image_inner">
+                          <div class="image_wrap w50">                              
+                              <picture>
+                                  <source media="(max-width:320px)" data-srcset="assets/img/cupofmilk@320.png">
+                                  <source media="(max-width:375px)" data-srcset="assets/img/cupofmilk@375.png">
+                                  <source media="(max-width:1024px)" data-srcset="assets/img/cupofmilk@1024.png">
+                                  <img class="image_inner lazy" data-src="assets/img/cupofmilk.png" alt="cupofmilk">
+                              </picture>
                           </div>
-                          <div class="image_wrap w50">
-                              <img src="assets/img/persimmon.png" alt="persimmon" class="image_inner">
+                          <div class="image_wrap w50">                              
+                              <picture>
+                                  <source media="(max-width:320px)" data-srcset="assets/img/persimmon@320.png">
+                                  <source media="(max-width:375px)" data-srcset="assets/img/persimmon@375.png">
+                                  <source media="(max-width:1024px)" data-srcset="assets/img/persimmon@1024.png">
+                                  <img class="image_inner lazy" data-src="assets/img/persimmon.png" alt="persimmon">
+                              </picture>
                           </div>
                       </div>
                     </div>
@@ -218,7 +233,7 @@
                         </div>
                         <div class="cards">
                             <div class="card">
-                                <img class="image" src="assets/img/cocktail.png" alt="cocktail">
+                                <img class="image lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="cocktail" data-src="assets/img/cocktail.png">
                                 <div class="date">20 NOV</div>
                                 <div class="wrap">
                                     <div class="topic">Green Smoothies: Too Much of a Good Thing?</div>
@@ -226,7 +241,7 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="image" src="assets/img/soup.png" alt="soup">
+                                <img class="image lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="soup" data-src="assets/img/soup.png">
                                 <div class="date">14 NOV</div>
                                 <div class="wrap">
                                     <div class="topic">Growing Food and a “Thirst” for Innovation</div>
@@ -234,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="image" src="assets/img/raspberries.png" alt="raspberries">
+                                <img class="image lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="raspberries" data-src="assets/img/raspberries.png">
                                 <div class="date">10 NOV</div>
                                 <div class="wrap">
                                     <div class="topic">Pesticides & Food: What You Need to Know</div>
@@ -294,7 +309,7 @@
                 &copy;2015 Company. All right reserver
             </div>
             <div class="logo--small">
-                <img src="assets/img/logo-small.png" alt="small-logo">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="lazy" alt="small-logo" data-src="assets/img/logo-small.png">
             </div>
             <p class="footer_slogan">
                 Made with <span class="pink_text">love</span> by Auskteez
@@ -306,6 +321,8 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/maskedinput.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/intersection-observer.js"></script>
+    <script src="assets/js/lazyload.js"></script>
     
 </body>
 </html>

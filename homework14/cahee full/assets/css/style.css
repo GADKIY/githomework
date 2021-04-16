@@ -435,8 +435,7 @@ header.page_header .header_logo {
   object-fit: cover;
 }
 .fourth__section--yellow .container__section--yellow .picture_wrap .w68 {
-  width: calc(65.8119% - 15px);
-  height: 100%;
+  width: calc(67.1% - 15px);
 }
 .fourth__section--yellow .container__section--yellow .picture_wrap .w31 {
   width: calc(31.6239% - 15px);
