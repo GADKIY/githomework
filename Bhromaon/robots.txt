@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /
+
+Sitemap: https://gadkiy.github.io/githomework/Brohmaon/sitemap.xml
+
+Host: gadkiy.github.io/githomework/Bhromaon/index
