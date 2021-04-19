@@ -82,6 +82,7 @@ body {
   font-weight: 400;
 }
 
+/* кнопка */
 .btn {
   position: relative;
   display: inline-block;
@@ -124,10 +125,12 @@ body {
   transform: translateX(0);
 }
 
+/* общие стили всех маленьких блоков на странице */
 .block_wrap {
   width: calc(50% - 15px);
 }
 
+/* первый экран */
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +320,8 @@ header.fixed {
 }
 .explore_fixed {
   padding: 200px 0 120px;
+  /* тут для первой  секции после хедера сделал прибавил верхний паддинг в высоту хедера
+              для того, чтобы когда хедер прилипает к верху небыло скачка у секии*/
 }
 
 .descr_wrap {
@@ -349,6 +354,7 @@ header.fixed {
   align-items: flex-end;
 }
 
+/* стили блока с картинками на первой секции */
 .image_inner {
   width: 65.5%;
   margin-bottom: 2px;
@@ -369,6 +375,7 @@ header.fixed {
   vertical-align: top;
 }
 
+/* блок с иконками и долбанными дужками, пол ночи над ними сидел */
 .recomm {
   padding: 94px 0 116px;
   background-color: #333;
@@ -395,6 +402,7 @@ header.fixed {
   width: 33%;
 }
 
+/* стили для центральной иконки */
 .check {
   position: relative;
 }
@@ -402,7 +410,6 @@ header.fixed {
   display: block;
   position: absolute;
   content: "";
-  width: 140%;
   width: 178%;
   height: 100%;
   -webkit-transform: translateX(-23%);
@@ -412,6 +419,7 @@ header.fixed {
   background: url(../img/shape.png) center center/contain no-repeat;
 }
 
+/* стили для секций близнецов */
 .book_section {
   background: #c8ad99 url(../img/background3.png) center center/cover no-repeat;
   padding: 230px 0 100px;
@@ -438,6 +446,7 @@ header.fixed {
   flex-direction: row-reverse;
 }
 
+/* стили для блоков в секциях близнецах */
 .second-block {
   padding: 50px 30px 50px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -457,6 +466,7 @@ header.fixed {
   margin-bottom: 40px;
 }
 
+/* тут сильно тупил с кавычками, не мог сообразить где взять иконку */
 .review {
   background: #2a2b2c url(../img/background5.png) center center/cover no-repeat;
   padding: 120px 0 200px;
