@@ -21,40 +21,40 @@ function perimeter(){
 // 4
 function area(){
     let radius = parseFloat(prompt("Введите радиус окружности.")),
-        rez = Math.PI * Math.pow(radius, 2);
-    alert(`Площадь окружности: ${rez.toFixed(2)}`);    
+        rez = (Math.PI * Math.pow(radius, 2).toFixed(2));
+    alert(`Площадь окружности: ${rez}`);    
 
 }
 // 5
 function distance(){
     let dist = parseFloat(prompt("Введите расстояние между городами.")),
         time = parseFloat(prompt("Введите время, за которое хотите доехать.")),
-        speed = dist/time;
-    alert(`Вам нужно ехать со скоростью ${Math.floor(speed)} км/ч`);
+        speed = Math.floor(dist/time);
+    alert(`Вам нужно ехать со скоростью ${speed} км/ч`);
 }
 // 6
 function convert(){
     let dollar = parseFloat(prompt("Введите сумму в долларах."));
     const coef = 0.83;
-    let euro = dollar * coef;
-    alert(`Вы получите ${euro.toFixed(3)} Евро. Курс: 0.83.`);
+    let euro = (dollar * coef).toFixed(3);
+    alert(`Вы получите ${euro} Евро. Курс: 0.83.`);
 }
 // 7
 function files(){
     let storage = parseInt(prompt("Введите объем накопителя (Гб)."));
     const file = 820,
         gigs = 1024;
-    let rez = (storage * gigs)/820;
-    alert(`На флешку помещается ${Math.floor(rez)} файлов объемом 820Мб.`);
+    let rez = Math.floor((storage * gigs)/820);
+    alert(`На флешку помещается ${rez} файлов объемом 820Мб.`);
 
 }
 // 8
 function chocolate(){
     let money = parseFloat(prompt("Введите количество денег.")),
         costChoc = parseFloat(prompt("Введите стоимость шоколадки.")),
-        quantity = money / costChoc,
-        delOfMoney = money % costChoc;
-    alert(`На ${money} грн. вы можете купить ${Math.floor(quantity)} шоколадкок, сдачи останется ${delOfMoney.toFixed(2)} грн.`);
+        quantity = Math.floor(money / costChoc),
+        delOfMoney = (money % costChoc).toFixed(2);
+    alert(`На ${money} грн. вы можете купить ${quantity} шоколадкок, сдачи останется ${delOfMoney} грн.`);
 }
 
 // 9
@@ -83,6 +83,6 @@ function contribution(){
     const percent = 1.05;
     let summaPer = summa * percent,
         percentage = summaPer - summa,
-        rez = (percentage / 365)*60;
-    alert(`Кол-во процентов за два месяца: ${rez.toFixed(2)} грн.`);
+        rez = ((percentage / 365)*60).toFixed(2);
+    alert(`Кол-во процентов за два месяца: ${rez} грн.`);
 }
