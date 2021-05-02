@@ -138,11 +138,45 @@ function calc(){
 }
 
 // 7
-/* function move(){
-    let a = parseInt(getElementById("parseNumber").value),
-        b = parseInt(getElementById("moveNumber").value);
+/* function move(){       
+    let a = parseInt(document.getElementById("parseNumber").value),
+        b = parseInt(document.getElementById("moveNumber").value),
+        divider = 10,
+        rez = a,
+        counter = 1;
+    while(Math.floor(a/divider)){
+        divider *=10;
+        ++counter;       
+    }
+    divider/=10;
+    for(let i = 0; i<b; i++){
+        let t = Math.floor(rez/divider);
+        let e = rez%divider;
+        rez = e*10+t;
+    }
+    document.getElementById("move_rez").innerText = rez;
 
 } */
+
+function move(){
+    let a = parseInt(document.getElementById("parseNumber").value),
+        b = parseInt(document.getElementById("moveNumber").value),
+        divider = 1,
+        rez = a,
+        counter = 0;
+    while(Math.floor(a/divider)){
+        divider*=10;
+        ++counter;
+    }
+    divider/=10;
+    b = b%counter;
+    for(let i = 0; i<b; i++){
+        let t = Math.floor(rez/divider);
+        let e = rez%divider;
+        rez = e*10+t;
+    }
+    document.getElementById("move_rez").innerHTML = rez;
+}
 
 // 8
 function date(){
@@ -160,16 +194,59 @@ function date(){
     }while(answer == true);     
 }
 
-/* function multiply(){
-    debugger
 
-    let a = parseInt(document.getElementById("multiply").value),
-        rez = '';
-        
-    for (let i = 1; i<=a; i++){
-        for (let j = 1; j<=a; j++){
-            rez = i*j;
+// 9
+function multiply(){
+    let table = document.createElement("table"),
+        tableBody = document.createElement("tbody"),           
+        row;
+    table.setAttribute("class", "table")
+    for (let i = 1; i<=10; i++){
+        if(i===1){
+            row = document.createElement("tr");
+        }else if((i-1)%5===0){
+            tableBody.append(row);
+            row = document.createElement("tr");
         }
-        document.getElementById("multiply_rez").innerText = rez;
+        let cell = document.createElement("td");
+        for (let j = 1; j<=10; j++){
+            let p = document.createElement("p");
+            p.innerText = `${i} x  ${j} = ${i*j}`;
+            cell.append(p);
+        }
+        row.append(cell);        
     }
-} */
+    tableBody.append(row);
+    table.append(tableBody);
+    document.getElementById("multiply_rez").append(table);    
+}
+
+// 10
+function ridle(){
+    let from = parseInt(document.getElementById("numberFrom").value),
+        to = parseInt(document.getElementById("numberTo").value),
+        rez;
+    while(true){
+        let n = Math.floor((to-from)/2+from);
+        let answer = prompt(`Ты загадал ${n}?\n Если оно равно введи '=', если меньше введи '<', если больше введи '>'.`);
+        switch(answer){
+            case "<":
+                to = n;
+                break;
+            case ">":
+                from = n;
+                break;
+            case "=":
+                rez = n;
+                break;
+            default:
+                alert("Да ну нахер!");
+                return;
+        }
+        if(rez!==undefined){
+            break;
+        }
+    }
+    alert("Ты молодец!!!!!!!!!!");
+    document.getElementById("ridle_rez").innerText = rez;
+}
