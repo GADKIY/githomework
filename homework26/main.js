@@ -132,3 +132,102 @@ function fa(){
     document.getElementById("fa_rez").innerHTML = rez;
 }
 
+ class DateTime {
+     constructor(hours, minutes, seconds) {
+        this.minutes = 0;
+        this.hours = 0;
+        if (seconds >= 60) {
+            this.seconds = seconds % 60;
+            this.minutes += Math.floor(seconds / 60);
+        } else {
+            this.seconds = seconds;
+        }
+
+        if (minutes >= 60) {
+            this.minutes += minutes % 60;
+            this.hours += Math.floor(minutes / 60);
+        } else {
+            this.minutes += minutes;
+        }
+
+        if (hours >= 24) {
+            this.hours = 0;
+        } else {
+            this.hours += hours;
+        }
+    }
+
+    //Time output
+    printTime(id_output) {
+        document.getElementById(id_output).innerHTML = `<div><b>${(this.hours<10)?'0'+this.hours:this.hours}</b>:<b>${(this.minutes<10)?'0'+this.minutes:this.minutes}</b>:<b>${(this.seconds<10)?'0'+this.seconds:this.seconds}</b></div>`;
+    }
+
+    update() {
+        if(this.seconds >= 60) {
+            this.minutes += Math.floor(this.seconds / 60);
+            this.seconds = this.seconds%60;
+        }else if (this.seconds < 0) {
+            this.minutes -= Math.floor(Math.abs(this.seconds) / 60);
+            if (this.seconds%60){
+                --this.minutes;
+                this.seconds = 60 + (this.seconds % 60);
+            }
+        }       
+        if(this.minutes>=60){
+            this.hours+=Math.floor(this.minutes/60);
+            this.minutes = this.minutes%60;
+        }else if(this.minutes < 0){
+            this.hours -= Math.floor(Math.abs(this.minutes) / 60);
+            if(this.minutes%60){
+                --this.hours;
+                this.minutes = 60 + (this.minutes % 60);
+            }
+        }
+        if(this.hours >= 24 || this.hours < 0) {
+            this.hours = 0;
+        }
+
+        // return `${this.hours}:${this.minutes}:${this.seconds}`;
+    }
+
+    addSeconds(seconds){
+        this.seconds+=seconds;
+        this.update();
+        // return `${this.hours}:${this.minutes}:${this.seconds}`;
+    }
+
+    addMinutes(minutes){
+        this.minutes+=minutes;
+        this.update();
+        // return `${this.hours}:${this.minutes}:${this.seconds}`;
+    }
+
+    addHours(hours){
+        this.hours+=hours;
+        this.update();
+        // return `${this.hours}:${this.minutes}:${this.seconds}`;
+    }
+}
+let d = new Date();
+let temp = new DateTime(d.getHours(), d.getMinutes(), d.getSeconds());
+
+function time () {
+    for (let text of document.getElementsByName("time")) {
+        if(text.value){
+            let num = parseInt(text.value);
+            switch (text.id) {
+                case "seconds":
+                    temp.addSeconds(num);
+                    break;
+                case "minutes":
+                    temp.addMinutes(num);
+                    break;
+                case "hours":
+                    temp.addHours(num);
+                    break;
+            }
+        }
+    }
+    temp.printTime("time_rez");
+}
+
