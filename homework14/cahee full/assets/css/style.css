@@ -1062,6 +1062,18 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
     display: block;
   }
 }
+@media screen and (max-width: 715px) {
+  .sixth__section--violet .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .sixth__section--violet .cards .card {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 480px) {
   .fourth__section--yellow .container__section--yellow .picture_wrap {
     -webkit-box-orient: vertical;
@@ -1101,17 +1113,6 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
   .fourth__section--yellow .container__section--yellow .bottom_wrap .w50 {
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  .sixth__section--violet .cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  .sixth__section--violet .cards .card {
-    width: 80%;
   }
 }
 @media screen and (max-width: 425px) {

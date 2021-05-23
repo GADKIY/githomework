@@ -1095,6 +1095,22 @@ footer{
     }
 }
 
+@media screen and (max-width: 715px){
+            .sixth__section--violet {
+                .cards {
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    margin-bottom: 0;
+
+                    .card {
+                        width: 80%;
+                    }
+                }
+            }
+}
+
 @media screen and (max-width:480px){
         .fourth__section--yellow {
             .container__section--yellow {
@@ -1143,19 +1159,6 @@ footer{
                         width: 100%;
                         margin-bottom: 30px;
                     }
-                }
-            }
-        }
-        .sixth__section--violet {
-            .cards {
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                margin-bottom: 0;
-
-                .card {
-                    width: 80%;
                 }
             }
         }
