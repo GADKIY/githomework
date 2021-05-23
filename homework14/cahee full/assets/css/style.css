@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  vertical-align: top;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -947,6 +951,7 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
     justify-content: center;
   }
   .second__section--green .container__section--green .main_block {
+    background: rgba(255, 255, 255, 0.5);
     width: 80%;
     text-align: center;
   }
@@ -957,6 +962,7 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
   }
   .fifth__section--white .container_fifth__section--white .container_inner {
     width: 60%;
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .sixth__section--violet {
@@ -984,6 +990,25 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
     width: calc(50% - 40px);
   }
 }
+@media screen and (max-width: 840px) {
+  .third__section--blue .container__section--blue {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .third__section--blue .container__section--blue .container-title {
+    width: 100%;
+    background-position: center center;
+    justify-content: center;
+  }
+  .third__section--blue .container__section--blue .list_container {
+    width: 100%;
+  }
+  .third__section--blue .container__section--blue .list_container .servises_list {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .first__section--white {
     background-size: cover;
@@ -998,47 +1023,6 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
 
   .fourth__section--yellow {
     padding: 50px 0 60px;
-  }
-}
-@media screen and (max-width: 730px) {
-  .header__menu {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-@media screen and (max-width: 425px) {
-  .title {
-    font-size: 60px;
-  }
-
-  .first__section--white {
-    padding: 150px 0 50px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .second__section--green .container__section--green {
-    padding-bottom: 50px;
-  }
-
-  .third__section--blue .container__section--blue {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-  .third__section--blue .container__section--blue .container-title {
-    width: 100%;
-    background-position: center center;
-  }
-  .third__section--blue .container__section--blue .list_container {
-    width: 100%;
-  }
-  .third__section--blue .container__section--blue .list_container .servises_list {
-    margin-left: 0;
   }
 
   .fourth__section--yellow .container__section--yellow .picture_wrap {
@@ -1068,62 +1052,17 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-
-  .fifth__section--white {
-    background: none;
-  }
-  .fifth__section--white .container_fifth__section--white {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .fifth__section--white .container_fifth__section--white .container_inner {
-    width: 100%;
-    margin: 0 0 20px;
-    text-align: center;
+}
+@media screen and (max-width: 730px) {
+  .header__menu {
+    display: none;
   }
 
-  .sixth__section--violet .cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  .sixth__section--violet .cards .card {
-    width: 80%;
-  }
-
-  .seventh__section .container__seventh-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-  .seventh__section .container__seventh-section .mini-container {
-    width: 100%;
-  }
-
-  footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .main_text {
-    font-size: 20px;
+  .hamburger {
+    display: block;
   }
 }
-@media screen and (max-width: 375px) {
-  .title {
-    font-size: 60px;
-  }
-
-  .third__section--blue .third__title {
-    font-size: 60px;
-  }
-
+@media screen and (max-width: 480px) {
   .fourth__section--yellow .container__section--yellow .picture_wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1162,6 +1101,76 @@ footer .copyright .pink_text, footer .footer_slogan .pink_text {
   .fourth__section--yellow .container__section--yellow .bottom_wrap .w50 {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .sixth__section--violet .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .sixth__section--violet .cards .card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .first__section--white {
+    padding: 150px 0 50px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .second__section--green .container__section--green {
+    padding-bottom: 50px;
+  }
+
+  .fifth__section--white {
+    background: none;
+  }
+  .fifth__section--white .container_fifth__section--white {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .fifth__section--white .container_fifth__section--white .container_inner {
+    width: 100%;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  .seventh__section .container__seventh-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .seventh__section .container__seventh-section .mini-container {
+    width: 100%;
+  }
+
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main_text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .third__section--blue .third__title {
+    font-size: 60px;
   }
 
   .sixth__section--violet .text_wrap--violet .sixth__title {
