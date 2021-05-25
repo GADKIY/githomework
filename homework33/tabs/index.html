@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>TABS</title>
+</head>
+<body>
+    <section>
+        <div class="product product_card">
+            <div class="product_card_tabs">
+                <ul class="product_card_tabs_list">
+                    <li class="product_card_tabs_list-item active">
+                        <a href="#information" class="active">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#tooltip"></use>
+                            </svg>                                            
+                            <div>
+                                information
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product_card_tabs_list-item">
+                        <a href="#ratings">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#card"></use>
+                            </svg>
+                            <div>
+                                ratings info
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product_card_tabs_list-item">                        
+                        <a href="#buy">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#basket"></use>
+                            </svg>                        
+                            <div>
+                                where to buy
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product_card_body active" id="information">
+                <div class="product_card_cover_wrap">
+                    <div class="product_card_image_wrap">
+                        <img src="assets/img/gamecover.png" alt="gamecover">
+                    </div>
+                    <div class="product_card_rating rating rating2">
+                        <!--
+                		--><a href="#5" title="Give 5 stars">★</a>
+                        <!--
+                		--><a href="#4" title="Give 4 stars">★</a>
+                        <!--
+                		--><a href="#3" title="Give 3 stars">★</a>
+                        <!--
+                		--><a href="#2" title="Give 2 stars">★</a>
+                        <!--
+                		--><a href="#1" title="Give 1 star">★</a>
+                    </div>
+                </div>
+                <div class="product_card_info_wrap">
+                    <div class="product_card_title_wrap">
+                        <div>
+                            <span class="product_card_name">FarCry 4</span>
+                            <div class="product_card_release_date">First Released Nov 17,2014</div>
+                        </div>                        
+                            <span class="circle"><span id="outNum"></span></span>                        
+                    </div>
+                    <p class="product_card_description">
+                        In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the
+                        Hima
+                        layas struggling under the regime of a despotic self-appointed king.
+                    </p>
+                    <div class="product_card_price_wrap">
+                        <div class="product_price">
+                            <div class="discount">
+                                20% OFF!
+                            </div>
+                            <div class="price">
+                                $59.96
+                            </div>
+                        </div>
+                        
+                            <button class="btn" type="button">buy it now</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product_card_body" id="ratings">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptate sit quo error atque eius tempora, incidunt placeat at debitis mollitia eaque impedit inventore ea ipsa rem est itaque, soluta aut vero. Sunt suscipit ut ipsum repellat eius eveniet molestiae ullam reiciendis sequi, corrupti id eum aut inventore voluptates ab, totam quidem adipisci nulla nesciunt distinctio dolorum laudantium quaerat dolor unde? Nulla, vero perspiciatis, est dolores inventore assumenda quia distinctio perferendis, quas mollitia amet veritatis nihil optio esse minima error aperiam iusto eum? Quisquam eum asperiores ea praesentium, ad, ducimus cupiditate odit recusandae tempore alias excepturi, fugiat delectus. Impedit, porro?</p>
+            </div>
+            <div class="product_card_body" id="buy">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptate sit quo error atque eius
+                    tempora, incidunt placeat at debitis mollitia eaque impedit inventore ea ipsa rem est itaque, soluta
+                    aut vero. Sunt suscipit ut ipsum repellat eius eveniet molestiae ullam reiciendis sequi, corrupti id
+                    eum aut inventore voluptates ab, totam quidem adipisci nulla nesciunt distinctio dolorum laudantium
+                    quaerat dolor unde? Nulla, vero perspiciatis, est dolores inventore assumenda quia distinctio
+                    perferendis, quas mollitia amet veritatis nihil optio esse minima error aperiam iusto eum? Quisquam
+                    eum asperiores ea praesentium, ad, ducimus cupiditate odit recusandae tempore alias excepturi,
+                    fugiat delectus. Impedit, porro?2</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
