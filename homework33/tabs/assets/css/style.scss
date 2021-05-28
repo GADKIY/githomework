@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html, body{
     width: 100%;
     height: 100%;
@@ -28,12 +29,17 @@ img{
 body{
     font-family: 'Lato', sans-serif;
     color: #b7bacd;
-
+    
 }
 
 section{
     background: url('../img/Layer41.png')center center / cover no-repeat;    
-    padding: 146px 0 174px 0;    
+    padding: 146px 0 174px 0;       
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .product_card{    
@@ -65,7 +71,6 @@ section{
                     width: 20px;
                     height: 20px;
                     fill: #b7bacd;
-    
                 }
                 &.active {
                     color: #fff;
@@ -96,10 +101,10 @@ section{
         display: none;
         padding: 60px 0 64px 0;
         justify-content: space-around;
+        animation: fadeIn .25s;
         &.active{
             display: flex;
         }
-
     }
     &_info_wrap{
         width: 90%;
@@ -168,8 +173,6 @@ section{
     }
 }
 
-
-
 .rating {
     width: 100%;
     text-align: center;
@@ -210,9 +213,14 @@ section{
 }
 
 .rating2 a {
-    float: none
+    float: none;
 }
 
 #ratings, #buy{
+    height: 428px;
+}
+
+.fade{
+    background-color: #212534;
     height: 428px;
 }

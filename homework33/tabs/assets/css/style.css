@@ -34,6 +34,14 @@ section {
   padding: 146px 0 174px 0;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .product_card {
   width: 100%;
   max-width: 600px;
@@ -93,6 +101,7 @@ section {
   display: none;
   padding: 60px 0 64px 0;
   justify-content: space-around;
+  animation: fadeIn 0.25s;
 }
 .product_card_body.active {
   display: flex;
@@ -207,5 +216,10 @@ section {
 }
 
 #ratings, #buy {
+  height: 428px;
+}
+
+.fade {
+  background-color: #212534;
   height: 428px;
 }

@@ -18,9 +18,7 @@ $(function(){
             $(".product_card_tabs_list a.active").removeClass('active');
             $(this).addClass('active');
             $(".product_card_body.active").removeClass("active");
-            // $(".fade").fadeOut(200);
             $($(this).attr("href")).addClass("active");
-            // $(".fade").delay(110).fadeIn(300);
         }
     });
 });
