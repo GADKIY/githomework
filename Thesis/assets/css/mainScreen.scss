@@ -1,0 +1,77 @@
+@import 'reset';
+
+.container{
+    width: 90%;
+    max-width: 1273px;
+    margin: 0 auto;
+}
+
+.main_screen{
+    width: 100%;    
+    display: flex;
+    background: rgb(229, 229, 229);
+    background: -moz-linear-gradient(90deg, rgba(229, 229, 229, 1) 7%, rgba(101, 189, 192, 1) 7%, rgba(229, 229, 229, 1) 80%);
+    background: -webkit-linear-gradient(90deg, rgba(229, 229, 229, 1) 7%, rgba(101, 189, 192, 1) 7%, rgba(229, 229, 229, 1) 80%);
+    background: linear-gradient(90deg, rgba(229, 229, 229, 1) 7%, rgba(101, 189, 192, 1) 7%, rgba(229, 229, 229, 1) 80%);
+    
+
+    &-control_bar{
+        background-color: #65BDC0;
+        width: 90%;
+        max-width: 107px;
+        text-align: center;
+        padding: 36px 0 177px 0;
+        border-radius: 60px 0 0 60px;
+        
+    }
+    &-logo{
+        width: 69px;
+        height: 69px;
+        margin: 0 auto 118px;
+    }
+    &-control-list{
+        text-align: center;
+        
+    }
+    &-control-item{
+        margin-bottom: 46px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        svg{
+           width: 36px;
+           height: 36px;
+           margin-bottom: 18px; 
+        }
+        a{
+            font-size: 15px;
+            color: rgba(255, 245, 245, .65);
+        }
+    }
+    &-info_wrap{
+        width: 100%;
+        max-width: 1166px;
+        background-color: #fff;
+        border-radius: 60px;
+        padding: 36px 87px 0 0;
+        text-align: end;
+    }
+    &-control_panel{
+        span{
+            display: inline-block;
+            margin-right: 18px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &-icon{
+            width: 30px;
+            height: 30px;             
+            vertical-align: super;                       
+            &-bigger{
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+}
